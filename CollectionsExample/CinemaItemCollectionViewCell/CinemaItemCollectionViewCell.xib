@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CinemaItemCollectionViewCell" customModule="CollectionsExample" customModuleProvider="target">
+            <connections>
+                <outlet property="itemDescription" destination="Rny-FX-f1o" id="j0W-AT-snz"/>
+                <outlet property="itemTimage" destination="feC-ZY-YJA" id="gWP-UH-mnY"/>
+                <outlet property="itemTitle" destination="POE-7n-caQ" id="NIY-lO-eC1"/>
+                <outlet property="itemView" destination="BuL-n3-CNk" id="WNP-t1-kV3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="BuL-n3-CNk">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jck-u3-zsj">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kwb-SW-pyQ">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="feC-ZY-YJA">
+                                <rect key="frame" x="0.0" y="0.0" width="190" height="149"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POE-7n-caQ">
+                                <rect key="frame" x="0.0" y="149" width="190" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rny-FX-f1o">
+                                <rect key="frame" x="0.0" y="169.5" width="190" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kwb-SW-pyQ" firstAttribute="top" secondItem="Jck-u3-zsj" secondAttribute="top" id="EJN-A2-LgV"/>
+                    <constraint firstAttribute="bottom" secondItem="Kwb-SW-pyQ" secondAttribute="bottom" id="Iuf-X7-bhf"/>
+                    <constraint firstAttribute="trailing" secondItem="Kwb-SW-pyQ" secondAttribute="trailing" id="cpw-9Z-c11"/>
+                    <constraint firstItem="Kwb-SW-pyQ" firstAttribute="leading" secondItem="Jck-u3-zsj" secondAttribute="leading" id="gxh-xX-b1B"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="192" height="190"/>
+            <point key="canvasLocation" x="-518.84057971014499" y="-141.29464285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
